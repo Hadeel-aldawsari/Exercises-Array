@@ -42,10 +42,9 @@ public class Main {
 
         int[] q3={20, 30, 40};
         int largest=q3[0];
-        for (int i = 0; i <q3.length; i++) {
-            if(q3[i]>largest)
-                largest=q3[i];
-        }
+        if(q3[0]>q3[q3.length-1])
+            largest=q3[0];
+        else largest=q3[q3.length-1];
         System.out.println("Larger value between first and last element: "+largest);
 
         //4.Write a Java program to swap the first and last elements of an array and
